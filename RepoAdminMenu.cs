@@ -1,4 +1,4 @@
-﻿using BepInEx;
+﻿﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
 using RepoAdminMenu.Utils;
@@ -12,7 +12,7 @@ namespace RepoAdminMenu {
 
         private const string mod_guid = "proferabg.REPO.RepoAdminMenu";
         private const string mod_name = "Repo Admin Menu";
-        private const string mod_version = "1.0.6";
+        private const string mod_version = "1.0.7"; // Updated version
 
         private static RepoAdminMenu _plugin;
 
@@ -32,9 +32,7 @@ namespace RepoAdminMenu {
 
             harmony.PatchAll();
 
-            mls.LogInfo($"R.A.M. ({mod_version}) has been allocated!");
+            mls.LogInfo($"R.A.M. ({mod_version}) initialized - Admin menu now available to all players!");
         }
-
     }
-    
 }
